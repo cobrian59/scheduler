@@ -2,7 +2,7 @@
 
 **Built by:** Chris O'Brian, Lorenzo Scotto di Vettimo, Radha Patel (rdp89)
 
-This tool was built for the final project in CS3110. Each of us feels as though this tool is more significant than just another assignment, however. We hope that other students may find it useful in planning out their academic career!
+Built almost entirely in OCaml, this tool was built for the final project in CS3110. Each of us feels as though this tool is more significant than just another assignment, however. We hope that other students may find it useful in planning out their academic career!
 
 ## Installation Instructions
 ---
