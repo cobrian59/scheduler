@@ -2,6 +2,7 @@
 
 **Built by:** Chris O'Brian, Lorenzo Scotto di Vettimo, Radha Patel (rdp89)
 
+This tool was built for the final project in CS3110. Each of us feels as though this tool is more significant than just another assignment, however. We hope that other students may find it useful in planning out their academic career!
 
 ## Installation Instructions
 ---
@@ -113,3 +114,7 @@ close
 ```
 
 A similar "save? prompt" will appear when you try to quit now!
+
+## In the Future
+
+Looking towards the future, we're hoping to incorporate functionality into the system that allows the user to "validate" a schedule by checking the courses against some predetermined set of degree requiremenets and pre/co-requisites. More to come on this in the next few weeks!
