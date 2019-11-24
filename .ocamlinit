@@ -1,0 +1,7 @@
+#directory "_build";;
+#require "str";;
+#require "curl";;
+#require "yojson";;
+#load_rec "schedule.cmo";;
+#load_rec "classRoster.cmo";;
+#load_rec "command.cmo";;
