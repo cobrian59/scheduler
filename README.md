@@ -1,17 +1,17 @@
-# CS 3110 Final Project 
+# Schedule Planning Tool 
 
-**Members:** Chris O'Brian (co253), Lorenzo Scotto di Vettimo (ls769), Radha Patel (rdp89)
+**Built by:** Chris O'Brian, Lorenzo Scotto di Vettimo, Radha Patel (rdp89)
 
 
 ## Installation Instructions
 ---
-Our system requires the "Ocurl" package to function, to install, please run:
+Our system requires additional packages to function, to install, please run:
 
 ```
-opam install ocurl
+opam install utop yojson ansiterminal lambda-term merlinuser-setup ocurl
 ```
 
-After which, you should run "make check" to ensure that your environment is what it should be. We've edited the checkenv.sh file to reflect our system.
+After which, I've included a Makefile with a "make check" rule to ensure that your environment is what it should be. The corresponding checkenv.sh file was modified from a version written by the CS3110 course staff at Cornell.
 
 Then, you can start our program by running "make run".
 
@@ -20,7 +20,7 @@ on what possible commands can be used. Then, entering only that command with no
 arguments will either execute the command (like "clear" or "quit"), or it will
 provide info on what other arguments are required.
 
-## Some example commands for MS1 functionality:
+## Some example commands for initial functionality:
 
 Initially, at the first prompt, type "new" to start a new schedule.
 
@@ -31,12 +31,12 @@ add SP20
 ```
 
 Add a new course:
-(Here, 4 is # of credits, A- is grade, "CSCore" is degree catagory, FA19 is semester).
+(Here, CS2800 is the course name, 4 is # of credits, A- is grade, "CSCore" is degree catagory, FA19 is semester).
 ```
 add CS3110 4 A- CScore FA19 
 ```
 
-Add a new course (and have Class Roster get credits info):
+Add a new course (and have Class Roster get credits info -- for Cornell courses ONLY):
 ```
 add CS3410 B CScore FA19 
 ```
@@ -67,10 +67,9 @@ close:
 quit
 ```
 
-## Some example commands for MS2 functionality:
+## Some example commands for more recently built functionality:
 
-MS2 contains all of the same functionality as MS1, but the user now has the
-ability to save a current schedule, load that schedule later, "close" the
+The user now has the ability to save a current schedule, load that schedule later, "close" the
 current schedule, and export a schedule to an HTML file for visualization.
 
 To start, again use "make run" to begin the initial prompt.
@@ -85,7 +84,7 @@ Or load a previously saved schedule:
 load <filepath>.json
 ```
 
-**NOTE:** We have included an _example.json_ file containing a schedule
+**NOTE:** I have included an _example.json_ file containing a schedule
 already populated with some courses and semesters. Feel free to try loading and
 working with it!
 
